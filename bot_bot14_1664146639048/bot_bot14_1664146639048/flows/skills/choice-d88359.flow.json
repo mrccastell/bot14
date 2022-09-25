@@ -1,0 +1,101 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "ppie1f0zq9",
+    "contentId": "builtin_single-choice-HxWYaL",
+    "invalidContentId": "",
+    "keywords": {
+      "Horario": [
+        "Horario",
+        "1 - Horários de atendimento da Loja."
+      ],
+      "Linha": [
+        "Linha",
+        "2 - Linha de produtos"
+      ],
+      "contato": [
+        "contato",
+        "3 - Receber o contato de um vendedor"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-HxWYaL {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "163315"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"ppie1f0zq9\",\"contentId\":\"builtin_single-choice-HxWYaL\",\"invalidContentId\":\"\",\"keywords\":{\"Horario\":[\"Horario\",\"1 - Horários de atendimento da Loja.\"],\"Linha\":[\"Linha\",\"2 - Linha de produtos\"],\"contato\":[\"contato\",\"3 - Receber o contato de um vendedor\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-ppie1f0zq9'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "772811"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"ppie1f0zq9\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-ppie1f0zq9']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "138789"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "644349"
+    }
+  ]
+}

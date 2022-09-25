@@ -1,0 +1,59 @@
+[
+  {
+    "id": "builtin_text-AKJnBA",
+    "formData": {
+      "text$en": "Olá, sou o atendente virtual da G2. Em que posso te ajudar? ",
+      "markdown$en": true,
+      "typing$en": true,
+      "variations$en": []
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-25T16:00:12.566Z",
+    "modifiedOn": "2022-09-25T16:22:02.699Z"
+  },
+  {
+    "id": "builtin_text-fPEMgF",
+    "formData": {
+      "text$en": "Obrigado pelo seu contato. Volte sempre!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-25T16:25:38.150Z",
+    "modifiedOn": "2022-09-25T16:25:38.150Z"
+  },
+  {
+    "id": "builtin_text-Hcqn_0",
+    "formData": {
+      "text$en": "Nosso horário de funcionamento é das 08:00 às 22:00. Não fechamos ao meio-dia. ",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-25T16:28:40.339Z",
+    "modifiedOn": "2022-09-25T17:32:09.071Z"
+  },
+  {
+    "id": "builtin_text-GZeLLx",
+    "formData": {
+      "text$en": "Modelos plásticos\nModelos em ferro\nModelos em bronze\n",
+      "markdown$en": true,
+      "typing$en": true,
+      "variations$en": []
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-25T16:30:50.823Z",
+    "modifiedOn": "2022-09-25T17:25:08.039Z"
+  },
+  {
+    "id": "builtin_text-JOTSAk",
+    "formData": {
+      "text$en": "Um de nossos vendedores estará lhe retornando em breve.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2022-09-25T16:32:52.217Z",
+    "modifiedOn": "2022-09-25T16:32:52.217Z"
+  }
+]

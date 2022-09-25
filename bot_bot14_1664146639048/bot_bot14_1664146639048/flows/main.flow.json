@@ -1,0 +1,119 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "true",
+          "node": "choice-d88359"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-AKJnBA"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-d88359",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-d88359",
+      "flow": "skills/choice-d88359.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Horario]",
+          "condition": "temp['skill-choice-ret-ppie1f0zq9'] == \"Horario\"",
+          "node": "Horarios_de_atendimento"
+        },
+        {
+          "caption": "User picked [Linha]",
+          "condition": "temp['skill-choice-ret-ppie1f0zq9'] == \"Linha\"",
+          "node": "Linhas_de_produtos"
+        },
+        {
+          "caption": "User picked [contato]",
+          "condition": "temp['skill-choice-ret-ppie1f0zq9'] == \"contato\"",
+          "node": "Contato_com_vendedor"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "#"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "c167f23926",
+      "name": "Agradecimentos",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-fPEMgF"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "51871b11ec",
+      "name": "Horarios_de_atendimento",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "Agradecimentos"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Hcqn_0"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "b37e3e69e2",
+      "name": "Linhas_de_produtos",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "Agradecimentos"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-GZeLLx"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "bcccd85554",
+      "name": "Contato_com_vendedor",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "Agradecimentos"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-JOTSAk"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}
