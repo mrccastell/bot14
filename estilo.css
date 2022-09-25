@@ -1,0 +1,131 @@
+/* Trabalho *atividade de produção* / Prof.Aline / Curso ADS / Autor: Marco Aurélio Reis Castellano.*/
+
+body{background-image: linear-gradient(to right, rgb(78, 14, 14) , rgb(184, 184, 151));}
+   
+.section_tabela{
+    background-image: linear-gradient(to right, rgb(235, 226, 226) , rgb(184, 184, 151));
+}
+
+.titulo_principal{
+    background-image: linear-gradient(to right, rgb(235, 226, 226) , rgb(184, 184, 151));
+}
+
+main{
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(184, 184, 151));
+}
+
+.div_imagem_topo{
+    border-style: double;
+    height: 26px;
+    background-color:rgb(71, 12, 12)}
+
+    .div_barra_superior{
+     border-style: solid;
+     height: 26px;
+     border-color: rgb(20, 2, 3);
+     background-color: write;
+     padding: 45px;} 
+
+     img#imagem_doacao {
+     max-height:140px;
+     margin:0;
+     border: 5px solid black;}
+
+    .section_conteudo_descritivo {background: rgb(73, 35, 35);}
+
+    .paragrafo_1_conteudo_descritivo { text-align: center;
+    font-style: oblique;
+    color: white;
+    font-size: large;
+    max-width: 820px;
+    margin: auto;}
+
+    h1 {color: red;
+    text-align:center;}
+
+    h2 {text-align: center;
+    color: black;}
+
+    .tabela_1 th ,td {
+    border: 1px solid black;
+    padding: 15px;
+    vertical-align: text-top;}
+
+    h3 {
+    text-align: left;
+    color: rgb(39, 47, 167);
+    margin-left: 40px;
+    font-size: 30px;}
+
+    .paragrafo_2_importancia { 
+    text-align: justify;
+    font-style: oblique;
+    color: black;
+    font-size: large;
+    max-width: 820px;
+    margin: 40px;}
+
+    .a_saiba_mais {
+    text-align: left;
+    font-style: oblique;
+    color: black;
+    font-size: medium;
+    margin-left: 40px;}
+
+    .link_entenda {
+    font-style: oblique;
+    color: rgb(119, 21, 21);
+    font-size: medium;
+    max-width: 820px;
+    margin-left: 0px;}
+
+    h4 {
+    text-align: left;
+    color: rgb(39, 47, 167);
+    margin-left: 40px;
+    font-size: 30px;}
+
+    .paragrafo_3_requisitos { 
+    text-align: justify;
+    font-style: oblique;
+    color: black;
+    font-size: large;
+    max-width: 820px;
+    margin: 40px;}
+
+    ol.lista_itens_requisitos {
+    list-style-type: disc;
+    text-align: justify;
+    color: black;
+    font-size: large;
+    max-width: 600px;
+    margin: 80px;
+    margin-top: -20px;
+    line-height: 30px;}
+
+    .paragrafo_4_lembrete{
+    text-align: left;
+    font-style: oblique;
+    color: black;
+    font-size: larger;
+    max-width: 820px;
+    margin: 40px;
+    margin-top: -60px; }
+
+    .div_rodape{
+   border-style: double;
+   height: 26px;
+   background-color:rgb(71, 12, 12)}
+    
+.section_requisitos{
+
+    background-image: url("doação.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 1000px;
+    /*    Foto para uso gratuito de FRANK MERIÑO no Pexels: https://www.pexels.com/pt-br/foto/sangue-doacao-homem-paciente-12193105/
+/*/
+
+}
+
+    
